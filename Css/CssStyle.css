@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+}
+
+ body {
+  font-family: Arial, Helvetica, sans-serif;
+ }
+ div.sticky {
+    margin-left: 90px;
+    border: 10px solid #f1f1f1;  
+  }
+
+.topnav {
+  
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+.topnav input {
+  float: left;
+  display: block;
+  margin-left: 5px;
+  color: #f1f1f1;
+  text-align: center;
+  padding: 14px 16px;
+  background-color:#4CAF50; 
+  text-decoration: none;
+}
+.topnav input:hover {
+  border:5px solid #f1f1f1;
+  cursor: pointer;
+  color: black;
+}
+
+  form {border: 5px solid #f1f1f1;
+  border-color: #4CAF50;
+  height: 420px;
+  width: 500px;
+  margin: 0 auto;
+  transition: width 0.5s;
+
+  }
+  form:hover
+  {
+    width: 510px;
+  }
+  form.regform
+  {
+    height: 1020px;
+    width: 600px;
+  } 
+  form.profileform
+  {
+    height: 500px;
+    width: 1100px;
+  }
+  form.addbookform
+  {
+    height: 740px;
+    width: 500px;
+  }
+  form.deletebookform
+  {
+    height: 200px;
+    width: 300px;
+  }
+  form.booklistform
+  {
+    height: 250px;
+  }
+  form.accountform
+  {
+    height: 200px;
+  }
+  #WithrawAmount
+  {
+    margin-left: 60px;
+  }
+  #Currentbalance
+  {
+    margin-left: 500px;
+  }
+
+  #makediscount
+  {
+    margin-left: 500px;
+  }
+  
+  input[type=text], input[type=password],input[type=email]
+  {
+          width: 60%;
+          padding: 12px 20px;
+          margin: 4px 0;
+          margin-left: 30px;
+          display: inline-block;
+          border: 1px solid #4CAF50;
+          box-sizing: border-box;
+  }    
+  .label
+  {
+          margin-left: 20px;  
+  }
+
+        
+  #Password
+  {
+      margin-left: 30px;
+  }
+ button {
+          background-color: #4CAF50;
+          color: white;
+          margin: 8px 0;
+          border: none;
+          cursor: pointer;
+          width: 25%;
+          height: 40px;
+          margin-left: 60px;
+  }
+  .buttondeletbook
+  {
+    margin-left: 5px;
+  }
+ 
+.newbutton
+        {
+          background-color: #4CAF50;
+          color: white;
+          border: none;
+          cursor: pointer;
+          width: 25%;
+          height: 40px;
+          margin-left: 140px; 
+        }
+
+        button:hover {
+          border:5px solid #f1f1f1;
+
+        }
+        .newbutton:hover {
+          border:5px solid #f1f1f1;
+
+        }
+
+        .imgcontainer {
+          text-align: center;
+          margin: 15px 0 10px 0;
+        }
+        .alltext {
+          text-align: center;
+          margin: 15px 0 10px 0;
+          font-weight: bold;
+        }
+
+        img.avatar {
+          width: 30%;
+          border-radius: 50%;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
