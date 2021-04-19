@@ -17,7 +17,7 @@
 
          if($userQuery->num_rows > 0) {
              while($user = $userQuery->fetch_assoc()) { 
-                 echo "<fieldset>
+                 echo "<fieldset >
 
 
                 <legend><b>Withdraw History:</b></legend>";
@@ -31,23 +31,15 @@
 
         
     ?>
-   <?php
-            if($_SERVER['REQUEST_METHOD'] == "POST" && $_REQUEST['button'] == "Back") {
-                header('Location: Account.php');
-                
-                }
-    ?> 
+    
     <!DOCTYPE html>
     <html>
     <head>
         <title>With Draw History </title>
+        <link rel="stylesheet" type="text/css" href="Css/CssStyle.css">
     </head>
     <body>
-
-        <form  action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>" method="POST">
-            <input type="submit" value="Back" name= "button">
-            
-        </form>
-    
+         <button type="button"> <a href="Account.php">Back!</a> </button>
+        
     </body>
     </html>

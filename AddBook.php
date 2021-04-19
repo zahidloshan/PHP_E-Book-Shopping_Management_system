@@ -18,67 +18,107 @@ include('BookAddValidation.php');
 
 	<form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>" onsubmit="return validateForm()" class="addbookform" method="POST" enctype="multipart/form-data">
     <p id="mytext" class="imgcontainer"></p>
-	<fieldset class="imgcontainer">
-    <legend>Book Information </legend>
-
+	<fieldset class="columncenter">
+    <legend class="imgcontainer" >Book Information </legend>
+    <table width="100%">
+    	<tr>
+    		<td>
 	<label for="bookName">Book Title : </label>
+	     </td>
+	<td>
 	<input type="text" id="bookName" name="bname" value="<?php echo $bookName ?>">
+	</td>
+	</tr>
 	<p><?php echo $bookNameErr; ?></p>
 
-
-	
-     <br>
      <!-- Book Id -->
+     <tr>
+    		<td>
         <label for="bId">Book Id : </label>
+             </td>
+	<td>
 		<input type="text" name="bid" id="bId" value="<?php echo $bId ?>">
+		</td>
+	</tr>
 		<p><?php echo $bIdErr; ?></p>	
-
-	<br>
 
      
 
 	<!-- Author  -->
+	<tr>
+    		<td>
 		<label for="bAuthor">Authr : </label>
+		     </td>
+	<td>
 		<input type="text" name="bauthor" id="bAuthor" value="<?php echo $bAuthor ?>">
+		</td>
+	</tr>
 		<p><?php echo $bAuthorErr; ?></p>
 
-	<br>
 
 		<!-- Publisher -->
+		<tr>
+    		<td>
         <label for="bPublisher">Publisher : </label>
+             </td>
+	     <td>
 		<input type="text" name="bpublisher" id="bPublisher" value="<?php echo $bPublisher ?>">
+		</td>
+	</tr>
 		<p><?php echo $bPublisherErr; ?></p>
 
-    <br>
-
-			
 
 	<!-- Edition  -->
+	<tr>
+    		<td>
         <label for="bEdition">Book Edition : </label>
+             </td>
+	<td>
 		<input type="text" name="bedition" id="bEdition" value="<?php echo $bEdition ?>">
+		</td>
+	</tr>
 		<p><?php echo $bEditionErr; ?></p>
-	<br>
-
 	
 
 	<!-- Book Price -->
+	<tr>
+    		<td>
         <label for="bPrice">Book Price : </label>
+             </td>
+	<td>
 		<input type="text" name="bprice" id="bPrice" value="<?php echo $bPrice ?>">
+		</td>
+	</tr>
 		<p><?php echo $bPriceErr; ?></p>	
 
-	<br>
 
 	<!-- Book Quantity -->
+	<tr>
+    		<td>
         <label for="bQuantity">Book Quantity : </label>
+             </td>
+	<td>
 		<input type="text" name="bquantity" id="bQuantity" value="<?php echo $bQuantity ?>">
+		</td>
+	</tr>
 		<p><?php echo $bQuantityErr; ?></p>
 	<!-- Book Picture -->
+	<tr>
+        <td colspan="2"><hr></td>
+    </tr>
+
+	<tr>
+    		<td>
         <label for="bPicture">Book Picture : </label>
+             </td>
+	<td>
 		<input type="file" name="file" id="bPicture" value="<?php echo $bPicture ?>">
+		</td>
+	</tr>
 		<!--<p><?php echo $bPictureErr; ?></p>	-->
 
 
-
+       </table>
 	</fieldset>
 
     <div>
